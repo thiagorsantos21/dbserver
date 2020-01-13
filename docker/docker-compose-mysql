@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  mysqlsrv:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: "MySql2019!"
+      MYSQL_USER: "Test"
+      MYSQL_PASSWORD: "TestPassword"
+      MYSQL_DATABASE: "DBserver"
+    ports:
+      - "3306:3306"
